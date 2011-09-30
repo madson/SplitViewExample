@@ -7,6 +7,8 @@
 //
 
 #import "SplitViewExampleAppDelegate.h"
+#import "MenuViewController.h"
+#import "DetailViewController.h"
 
 @implementation SplitViewExampleAppDelegate
 
@@ -14,7 +16,36 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    // navigation controller that show the menuView
+    UINavigationController *navigation;
+    
+    // instances of MenuViewController
+    menuView = [[MenuViewController alloc] init];
+    
+    // intances the UINavigationController with menuView as root view
+    navigation = [[UINavigationController alloc] initWithRootViewController:menuView];
+    
+    
+    // detail view 
+    detailView = [[DetailViewController alloc] init];
+    
+    // show to menuView who is detailView
+    menuView.detailController = detailView;
+    
+    // split view
+    splitView = [[UISplitViewController alloc] init];
+    splitView.viewControllers = [NSArray arrayWithObjects:navigation, detailView, nil];
+    splitView.delegate = detailView;
+    [detailView release];
+    
+    // adding split view to the window
+    self.window.rootViewController = splitView;
+
+    // memory releases
+    [splitView release];
+    [menuView release];
+    [navigation release];
+    
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -14,6 +14,10 @@
 		D7A3EF3C143570B8004B798E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3EF3B143570B8004B798E /* main.m */; };
 		D7A3EF40143570B8004B798E /* SplitViewExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3EF3F143570B8004B798E /* SplitViewExampleAppDelegate.m */; };
 		D7A3EF43143570B9004B798E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A3EF41143570B9004B798E /* MainWindow.xib */; };
+		D7A3EF4C143570EC004B798E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3EF4A143570EC004B798E /* MenuViewController.m */; };
+		D7A3EF4D143570EC004B798E /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A3EF4B143570EC004B798E /* MenuViewController.xib */; };
+		D7A3EF511435714B004B798E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3EF4F1435714B004B798E /* DetailViewController.m */; };
+		D7A3EF521435714B004B798E /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A3EF501435714B004B798E /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +25,19 @@
 		D7A3EF2F143570B8004B798E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D7A3EF31143570B8004B798E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D7A3EF33143570B8004B798E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		D7A3EF37143570B8004B798E /* SplitViewExample-Info.plist */ = {isa = PBXFileReference; path = "SplitViewExample-Info.plist"; sourceTree = "<group>"; };
+		D7A3EF37143570B8004B798E /* SplitViewExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SplitViewExample-Info.plist"; sourceTree = "<group>"; };
 		D7A3EF39143570B8004B798E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7A3EF3B143570B8004B798E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D7A3EF3D143570B8004B798E /* SplitViewExample-Prefix.pch */ = {isa = PBXFileReference; path = "SplitViewExample-Prefix.pch"; sourceTree = "<group>"; };
-		D7A3EF3E143570B8004B798E /* SplitViewExampleAppDelegate.h */ = {isa = PBXFileReference; path = SplitViewExampleAppDelegate.h; sourceTree = "<group>"; };
+		D7A3EF3D143570B8004B798E /* SplitViewExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplitViewExample-Prefix.pch"; sourceTree = "<group>"; };
+		D7A3EF3E143570B8004B798E /* SplitViewExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewExampleAppDelegate.h; sourceTree = "<group>"; };
 		D7A3EF3F143570B8004B798E /* SplitViewExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewExampleAppDelegate.m; sourceTree = "<group>"; };
 		D7A3EF42143570B9004B798E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		D7A3EF49143570EC004B798E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		D7A3EF4A143570EC004B798E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		D7A3EF4B143570EC004B798E /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		D7A3EF4E1435714B004B798E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = DetailViewController.h; sourceTree = "<group>"; };
+		D7A3EF4F1435714B004B798E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D7A3EF501435714B004B798E /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,12 @@
 				D7A3EF3F143570B8004B798E /* SplitViewExampleAppDelegate.m */,
 				D7A3EF41143570B9004B798E /* MainWindow.xib */,
 				D7A3EF36143570B8004B798E /* Supporting Files */,
+				D7A3EF49143570EC004B798E /* MenuViewController.h */,
+				D7A3EF4A143570EC004B798E /* MenuViewController.m */,
+				D7A3EF4B143570EC004B798E /* MenuViewController.xib */,
+				D7A3EF4E1435714B004B798E /* DetailViewController.h */,
+				D7A3EF4F1435714B004B798E /* DetailViewController.m */,
+				D7A3EF501435714B004B798E /* DetailViewController.xib */,
 			);
 			path = SplitViewExample;
 			sourceTree = "<group>";
@@ -142,6 +158,8 @@
 			files = (
 				D7A3EF3A143570B8004B798E /* InfoPlist.strings in Resources */,
 				D7A3EF43143570B9004B798E /* MainWindow.xib in Resources */,
+				D7A3EF4D143570EC004B798E /* MenuViewController.xib in Resources */,
+				D7A3EF521435714B004B798E /* DetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +172,8 @@
 			files = (
 				D7A3EF3C143570B8004B798E /* main.m in Sources */,
 				D7A3EF40143570B8004B798E /* SplitViewExampleAppDelegate.m in Sources */,
+				D7A3EF4C143570EC004B798E /* MenuViewController.m in Sources */,
+				D7A3EF511435714B004B798E /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

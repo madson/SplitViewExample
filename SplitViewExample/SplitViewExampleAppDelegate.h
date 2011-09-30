@@ -8,7 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SplitViewExampleAppDelegate : NSObject <UIApplicationDelegate>
+@class MenuViewController;
+@class DetailViewController;
+
+@interface SplitViewExampleAppDelegate : NSObject <UIApplicationDelegate> {
+    UISplitViewController *splitView;
+    MenuViewController *menuView;
+    DetailViewController *detailView;
+}
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 
