@@ -12,7 +12,7 @@
 		D7A3EF34143570B8004B798E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7A3EF33143570B8004B798E /* CoreGraphics.framework */; };
 		D7A3EF3A143570B8004B798E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D7A3EF38143570B8004B798E /* InfoPlist.strings */; };
 		D7A3EF3C143570B8004B798E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3EF3B143570B8004B798E /* main.m */; };
-		D7A3EF40143570B8004B798E /* SplitViewExampleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3EF3F143570B8004B798E /* SplitViewExampleAppDelegate.m */; };
+		D7A3EF40143570B8004B798E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3EF3F143570B8004B798E /* AppDelegate.m */; };
 		D7A3EF43143570B9004B798E /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A3EF41143570B9004B798E /* MainWindow.xib */; };
 		D7A3EF4C143570EC004B798E /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7A3EF4A143570EC004B798E /* MenuViewController.m */; };
 		D7A3EF4D143570EC004B798E /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7A3EF4B143570EC004B798E /* MenuViewController.xib */; };
@@ -29,13 +29,13 @@
 		D7A3EF39143570B8004B798E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D7A3EF3B143570B8004B798E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D7A3EF3D143570B8004B798E /* SplitViewExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SplitViewExample-Prefix.pch"; sourceTree = "<group>"; };
-		D7A3EF3E143570B8004B798E /* SplitViewExampleAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewExampleAppDelegate.h; sourceTree = "<group>"; };
-		D7A3EF3F143570B8004B798E /* SplitViewExampleAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplitViewExampleAppDelegate.m; sourceTree = "<group>"; };
+		D7A3EF3E143570B8004B798E /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		D7A3EF3F143570B8004B798E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D7A3EF42143570B9004B798E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		D7A3EF49143570EC004B798E /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		D7A3EF4A143570EC004B798E /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		D7A3EF4B143570EC004B798E /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
-		D7A3EF4E1435714B004B798E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = DetailViewController.h; sourceTree = "<group>"; };
+		D7A3EF4E1435714B004B798E /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		D7A3EF4F1435714B004B798E /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		D7A3EF501435714B004B798E /* DetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,8 +84,8 @@
 		D7A3EF35143570B8004B798E /* SplitViewExample */ = {
 			isa = PBXGroup;
 			children = (
-				D7A3EF3E143570B8004B798E /* SplitViewExampleAppDelegate.h */,
-				D7A3EF3F143570B8004B798E /* SplitViewExampleAppDelegate.m */,
+				D7A3EF3E143570B8004B798E /* AppDelegate.h */,
+				D7A3EF3F143570B8004B798E /* AppDelegate.m */,
 				D7A3EF41143570B9004B798E /* MainWindow.xib */,
 				D7A3EF36143570B8004B798E /* Supporting Files */,
 				D7A3EF49143570EC004B798E /* MenuViewController.h */,
@@ -171,7 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7A3EF3C143570B8004B798E /* main.m in Sources */,
-				D7A3EF40143570B8004B798E /* SplitViewExampleAppDelegate.m in Sources */,
+				D7A3EF40143570B8004B798E /* AppDelegate.m in Sources */,
 				D7A3EF4C143570EC004B798E /* MenuViewController.m in Sources */,
 				D7A3EF511435714B004B798E /* DetailViewController.m in Sources */,
 			);
@@ -285,6 +285,7 @@
 				D7A3EF48143570B9004B798E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
